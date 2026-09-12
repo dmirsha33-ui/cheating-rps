@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Cheating Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <!-- TITLE -->
+        <header>
+            <h1>🎮 Cheating RPS</h1>
+
+            <p class="subtitle">
+                Can you beat the cheating computer? 😈
+            </p>
+        </header>
+
+
+        <!-- SCORE -->
+        <div class="score-board">
+
+            <div class="score-box player-score">
+                <span>YOU</span>
+                <strong id="playerScore">0</strong>
+            </div>
+
+            <div class="vs">
+                VS
+            </div>
+
+            <div class="score-box computer-score">
+                <span>COMPUTER</span>
+                <strong id="computerScore">0</strong>
+            </div>
+
+        </div>
+
+
+        <!-- CAMERA SECTION -->
+        <section class="camera-section">
+
+            <h2>📷 Show Your Hand</h2>
+
+            <p class="camera-instruction">
+                Show ✊ Rock, ✋ Paper or ✌️ Scissors to the camera
+            </p>
+
+            <div class="camera-container">
+
+                <video
+                    id="camera"
+                    autoplay
+                    playsinline
+                    muted
+                ></video>
+
+                <canvas id="outputCanvas"></canvas>
+
+                <div id="cameraStatus" class="camera-status">
+                    Camera is off
+                </div>
+
+            </div>
+
+
+            <button
+                id="cameraButton"
+                class="camera-button"
+                onclick="startCamera()"
+            >
+                📷 Start Camera
+            </button>
+
+        </section>
+
+
+        <!-- DETECTED GESTURE -->
+
+        <div class="detected-box">
+
+            <span>Your gesture:</span>
+
+            <strong id="detectedGesture">
+                Waiting...
+            </strong>
+
+        </div>
+
+
+        <!-- COUNTDOWN -->
+
+        <div
+            id="countdown"
+            class="countdown"
+        >
+        </div>
+
+
+        <!-- BATTLE -->
+
+        <section class="battle">
+
+            <div class="fighter">
+
+                <h3>YOU</h3>
+
+                <div
+                    id="playerEmoji"
+                    class="fighter-emoji"
+                >
+                    ❔
+                </div>
+
+            </div>
+
+
+            <div class="battle-vs">
+                ⚡
+            </div>
+
+
+            <div class="fighter">
+
+                <h3>COMPUTER</h3>
+
+                <div
+                    id="computerEmoji"
+                    class="fighter-emoji"
+                >
+                    ❔
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULT -->
+
+        <div
+            id="result"
+            class="result"
+        >
+            Show your hand to start!
+        </div>
+
+
+        <!-- CHEAT MESSAGE -->
+
+        <div
+            id="cheatMessage"
+            class="cheat-message"
+        >
+        </div>
+
+
+        <!-- MANUAL BUTTONS -->
+
+        <section class="manual-section">
+
+            <p>
+                Or choose manually:
+            </p>
+
+            <div class="choices">
+
+                <button
+                    onclick="playGame('rock')"
+                    class="choice"
+                >
+                    🪨
+                    <span>Rock</span>
+                </button>
+
+                <button
+                    onclick="playGame('paper')"
+                    class="choice"
+                >
+                    📄
+                    <span>Paper</span>
+                </button>
+
+                <button
+                    onclick="playGame('scissors')"
+                    class="choice"
+                >
+                    ✂️
+                    <span>Scissors</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESET -->
+
+        <button
+            onclick="resetGame()"
+            class="reset-button"
+        >
+            🔄 Reset Game
+        </button>
+
+    </div>
+
+
+    <!-- MEDIAPIPE -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+
+    <!-- YOUR JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

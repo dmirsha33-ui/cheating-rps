@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RPS Cheat Machine 🤖</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background decorations -->
+    <div class="bubble bubble1"></div>
+    <div class="bubble bubble2"></div>
+    <div class="bubble bubble3"></div>
+
+    <main class="game-container">
+
+        <!-- Header -->
+        <header>
+            <div class="logo">🤖</div>
+
+            <div>
+                <h1>RPS Cheat Machine</h1>
+                <p class="subtitle">
+                    Rock • Paper • Scissors... but the AI cheats 😈
+                </p>
+            </div>
+        </header>
+
+
+        <!-- AI Section -->
+        <section class="ai-card">
+
+            <div class="robot">
+                🤖
+            </div>
+
+            <div class="ai-text">
+                <h2 id="aiMessage">Think you can beat me?</h2>
+
+                <p id="aiStatus">
+                    I'm totally fair... probably.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- Cheat Meter -->
+        <section class="meter-section">
+
+            <div class="meter-header">
+                <span>😈 AI Cheat Level</span>
+                <span id="cheatPercent">10%</span>
+            </div>
+
+            <div class="meter">
+                <div id="cheatBar"></div>
+            </div>
+
+            <p id="cheatStatus">
+                The AI is behaving... for now.
+            </p>
+
+        </section>
+
+
+        <!-- Battle Area -->
+        <section class="battle">
+
+            <div class="player-area">
+
+                <h3>YOU</h3>
+
+                <div class="choice-display" id="playerChoice">
+                    ❔
+                </div>
+
+            </div>
+
+
+            <div class="vs">
+                VS
+            </div>
+
+
+            <div class="computer-area">
+
+                <h3>AI</h3>
+
+                <div class="choice-display" id="computerChoice">
+                    ❔
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Result -->
+        <section class="result-section">
+
+            <h2 id="result">
+                Choose your weapon!
+            </h2>
+
+            <p id="resultDescription">
+                Rock, Paper or Scissors?
+            </p>
+
+        </section>
+
+
+        <!-- Choices -->
+        <section class="choices">
+
+            <button class="choice rock" onclick="playGame('rock')">
+
+                <span class="emoji">🪨</span>
+
+                <span>ROCK</span>
+
+            </button>
+
+
+            <button class="choice paper" onclick="playGame('paper')">
+
+                <span class="emoji">📄</span>
+
+                <span>PAPER</span>
+
+            </button>
+
+
+            <button class="choice scissors" onclick="playGame('scissors')">
+
+                <span class="emoji">✂️</span>
+
+                <span>SCISSORS</span>
+
+            </button>
+
+        </section>
+
+
+        <!-- Score -->
+        <section class="score-board">
+
+            <div class="score-box">
+
+                <span>YOU</span>
+
+                <strong id="playerScore">0</strong>
+
+            </div>
+
+
+            <div class="score-box">
+
+                <span>DRAWS</span>
+
+                <strong id="drawScore">0</strong>
+
+            </div>
+
+
+            <div class="score-box">
+
+                <span>AI</span>
+
+                <strong id="computerScore">0</strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <h2>🧠 AI Behavior Analysis</h2>
+
+            <div class="stats-grid">
+
+                <div>
+                    <span>Rounds</span>
+                    <strong id="rounds">0</strong>
+                </div>
+
+                <div>
+                    <span>Your favorite</span>
+                    <strong id="favoriteMove">-</strong>
+                </div>
+
+                <div>
+                    <span>AI cheats</span>
+                    <strong id="cheatCount">0</strong>
+                </div>
+
+                <div>
+                    <span>AI mood</span>
+                    <strong id="aiMood">😇</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Achievement -->
+        <section class="achievement" id="achievement">
+
+            🏆 Achievement unlocked:
+            <strong id="achievementText">
+                First Round!
+            </strong>
+
+        </section>
+
+
+        <!-- Controls -->
+        <section class="controls">
+
+            <button onclick="resetGame()" class="reset-button">
+                🔄 Reset Game
+            </button>
+
+            <button onclick="toggleCheat()" class="cheat-button">
+                😈 Toggle Cheat Mode
+            </button>
+
+        </section>
+
+
+        <footer>
+
+            <p>
+                ⚠️ Warning: This game is completely unfair.
+            </p>
+
+            <p>
+                Made for absolutely no useful reason. 😂
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
