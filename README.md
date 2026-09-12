@@ -2,96 +2,82 @@
 
 
 
-# [Project Name] 🎯
+# [cheating-rps] 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [Error 500]
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
-
+- Team Lead: [Diya Mirsha] - [College of engineering Munnar]
+- Member 2: [Diya Mirsha] - [College of engineering Munnar]
+- Member 3: [Akhila S K] - [College of engineering Munnar]
+  
 ### Project Description
-[2-3 lines about what your project does]
+[Cheating RPS is an interactive Rock-Paper-Scissors game using webcam hand gestures. 📷✊✋✌️
+It features a cheating computer, animations, scores, and fun sound effects. 🎮😈]
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+[It makes a simple, repetitive game more interactive and engaging]
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+[Adds a fun cheating mechanic and animations.]
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [java,html,Css]
+- [None / MediaPipe]
+- [MediaPipe Hands, Camera Utils, Drawing Utils]
+- [VS Code, Chrome, Live Server, Webcam]
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
-### Implementation
-For Software:
-# Installation
-[commands]
 
-# Run
-[commands]
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1]<img width="1920" height="1080" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/b0670e56-2645-4d3c-b143-b158a76c7fa8" />
+opening the website
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2]<img width="1920" height="1080" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/467ea68b-5509-4293-9f7e-075a0e35409a" />
+opening the camera sensor
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3]<img width="1920" height="1080" alt="screenshot(4)" src="https://github.com/user-attachments/assets/2c625ba3-1fc2-4def-a282-008972c227b3" />
+showing scissor to camera sensor
+
 
 # Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+![Workflow]
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0d33e199-a284-4595-927a-5483a3f57e45" />
 
-For Hardware:
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
+
+https://github.com/user-attachments/assets/933ba81b-71e0-476a-8983-23ed4bbe1f58
+
+ef20
+
+Demonstration
+Start the camera and allow permission. 📷
+Show Rock ✊, Paper ✋, or Scissors ✌️.
+MediaPipe detects the hand gesture.
+A 3-2-1 countdown starts.
+The computer chooses randomly, with a 30% chance of cheating. 🤖😈
+The game displays the result, score, animation, and sound effect. 🔊
+Click Reset to play again.
+
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [Diya mirsha]: [idea]
+- [Akhila S K]: [coding]
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
